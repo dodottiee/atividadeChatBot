@@ -15,12 +15,24 @@ entities:
 
 slots:
   tipo_problema:
-    type: text
+    type: categorical
+    values:
+      - acesso
+      - plano
+      - tecnico
     influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: tipo_problema
+  
   tentativas_resolucao:
-    type: int
+    type: float
+    min_value: 0
+    max_value: 10
     initial_value: 0
     influence_conversation: true
+    mappings:
+    - type: custom
 
 responses:
   utter_cumprimento:

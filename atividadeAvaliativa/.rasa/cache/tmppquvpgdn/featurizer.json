@@ -1,0 +1,60 @@
+{
+  "type": "MaxHistoryTrackerFeaturizer",
+  "state_featurizer": {
+    "action_texts": [],
+    "entity_tag_specs": [],
+    "feature_states": {
+      "intent": {
+        "afirmar": 0,
+        "ajuda_humana": 1,
+        "back": 2,
+        "cumprimento": 3,
+        "despedida": 4,
+        "negar": 5,
+        "nlu_fallback": 6,
+        "out_of_scope": 7,
+        "problema_acesso": 8,
+        "problema_plano": 9,
+        "problema_tecnico": 10,
+        "restart": 11,
+        "session_start": 12
+      },
+      "action_name": {
+        "action_listen": 0,
+        "action_restart": 1,
+        "action_session_start": 2,
+        "action_default_fallback": 3,
+        "action_deactivate_loop": 4,
+        "action_revert_fallback_events": 5,
+        "action_default_ask_affirmation": 6,
+        "action_default_ask_rephrase": 7,
+        "action_two_stage_fallback": 8,
+        "action_unlikely_intent": 9,
+        "action_back": 10,
+        "...": 11,
+        "action_extract_slots": 12,
+        "action_fornecer_solucao": 13,
+        "action_resetar_tentativas": 14,
+        "action_encaminhar_humano": 15,
+        "utter_ajuda_humana": 16,
+        "utter_cumprimento": 17,
+        "utter_despedida": 18,
+        "utter_pedir_mais_detalhes": 19
+      },
+      "entities": {
+        "tipo_problema": 0
+      },
+      "slots": {
+        "tipo_problema_0": 0,
+        "tipo_problema_1": 1,
+        "tipo_problema_2": 2,
+        "tipo_problema_3": 3,
+        "tentativas_resolucao_0": 4,
+        "tentativas_resolucao_1": 5
+      },
+      "active_loop": {}
+    }
+  },
+  "remove_duplicates": true,
+  "max_history": 5
+}
