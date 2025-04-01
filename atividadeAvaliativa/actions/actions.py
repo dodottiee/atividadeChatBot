@@ -14,10 +14,9 @@ class ActionFornecerSolucao(Action):
         # Base de conhecimento com soluções
         base_conhecimento = {
             "acesso": [
-                "1️⃣ Vá para a página de login",
-                "2️⃣ Clique em 'Esqueci minha senha'",
-                "3️⃣ Siga as instruções no seu email",
-                "🔗 Acesse nosso guia completo: [link/ajuda/acesso]",
+                "1️ Vá para a página de login",
+                "2️ Clique em 'Esqueci minha senha'",
+                "3️ Siga as instruções no seu email",
                 "Se ainda tiver dificuldades, posso transferir você para um atendente."
             ],
             "plano": [
@@ -26,14 +25,13 @@ class ActionFornecerSolucao(Action):
                 "- Premium: R$20/mês (3 dispositivos)",
                 "- Família: R$30/mês (6 dispositivos)",
                 "Para alterar:",
-                "1️⃣ Acesse Configurações > 2️⃣ Selecione 'Plano' > 3️⃣ Escolha novo plano",
-                "🔗 Mais detalhes em: [link/planos]"
+                "1️ Acesse Configurações > 2️ Selecione 'Plano' > 3️ Escolha o novo plano",
             ],
             "tecnico": [
                 "Vamos tentar resolver:",
-                "1️⃣ Reinicie o aplicativo",
-                "2️⃣ Verifique sua conexão com a internet",
-                "3️⃣ Atualize para a versão mais recente",
+                "1️ Reinicie o aplicativo",
+                "2️ Verifique sua conexão com a internet",
+                "3️ Atualize para a versão mais recente",
                 "Se o problema persistir, descreva com mais detalhes ou posso transferir para um atendente."
             ]
         }
