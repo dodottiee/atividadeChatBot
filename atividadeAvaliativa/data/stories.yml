@@ -1,0 +1,42 @@
+version: "3.1"
+
+stories:
+- story: cumprimento
+  steps:
+  - intent: cumprimento
+  - action: utter_cumprimento
+
+- story: despedida
+  steps:
+  - intent: despedida
+  - action: utter_despedida
+
+- story: problema de acesso
+  steps:
+  - intent: problema_acesso
+  - action: action_fornecer_solucao
+  - slot_was_set:
+    - tipo_problema: "acesso"
+  
+- story: problema de plano
+  steps:
+  - intent: problema_plano
+  - action: action_fornecer_solucao
+  - slot_was_set:
+    - tipo_problema: "plano"
+  
+- story: problema técnico
+  steps:
+  - intent: problema_tecnico
+  - action: action_fornecer_solucao
+  - slot_was_set:
+    - tipo_problema: "tecnico"
+
+- story: encaminhar para humano após tentativas
+  steps:
+  - intent: problema_tecnico
+  - action: action_fornecer_solucao
+  - intent: negar
+  - action: utter_pedir_mais_detalhes
+  - intent: problema_tecnico
+  - action: action_encaminhar_humano

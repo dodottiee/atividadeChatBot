@@ -1,0 +1,48 @@
+version: "3.1"
+
+intents:
+  - cumprimento
+  - despedida
+  - problema_acesso
+  - problema_plano
+  - problema_tecnico
+  - negar
+  - afirmar
+  - ajuda_humana
+
+entities:
+  - tipo_problema
+
+slots:
+  tipo_problema:
+    type: text
+    influence_conversation: true
+  tentativas_resolucao:
+    type: int
+    initial_value: 0
+    influence_conversation: true
+
+responses:
+  utter_cumprimento:
+    - text: "Olá! Eu sou o assistente virtual da Som na Nuvem. Como posso te ajudar hoje?"
+    - text: "Oi! Eu sou o assistente da Som na Nuvem. Qual problema você está enfrentando?"
+  
+  utter_despedida:
+    - text: "Até logo! Se precisar de mais ajuda, estou aqui."
+    - text: "Foi um prazer ajudar! Aproveite sua música."
+  
+  utter_ajuda_humana:
+    - text: "Vou transferir você para um de nossos atendentes. Um momento por favor..."
+  
+  utter_pedir_mais_detalhes:
+    - text: "Poderia me dar mais detalhes sobre o problema que está enfrentando?"
+    - text: "Para que eu possa ajudar melhor, descreva com mais detalhes o que está acontecendo."
+
+actions:
+  - action_fornecer_solucao
+  - action_resetar_tentativas
+  - action_encaminhar_humano
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

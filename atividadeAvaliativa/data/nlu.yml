@@ -1,0 +1,55 @@
+version: "3.1"
+
+nlu:
+- intent: cumprimento
+  examples: |
+    - oi
+    - olá
+    - bom dia
+    - boa tarde
+    - e aí
+    - tudo bem?
+  
+- intent: despedida
+  examples: |
+    - tchau
+    - até logo
+    - obrigado
+    - valeu
+    - até mais
+    - adeus
+  
+- intent: problema_acesso
+  examples: |
+    - não consigo acessar minha conta
+    - estou com problemas para entrar
+    - esqueci minha senha
+    - login não funciona
+    - acesso negado
+    - minha conta está bloqueada
+  
+- intent: problema_plano
+  examples: |
+    - quero mudar meu plano
+    - como faço upgrade?
+    - quero downgrade
+    - mostrar planos disponíveis
+    - quero cancelar minha assinatura
+    - como altero meu plano?
+  
+- intent: problema_tecnico
+  examples: |
+    - o aplicativo não funciona
+    - música não toca
+    - problema de reprodução
+    - erro no app
+    - está travando muito
+    - qualidade do som ruim
+  
+- intent: ajuda_humana
+  examples: |
+    - quero falar com um humano
+    - atendente humano
+    - não resolveu meu problema
+    - falar com pessoa
+    - não ajudou
