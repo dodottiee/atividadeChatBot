@@ -28,7 +28,7 @@ responses:
     - text: "Oi! Eu sou o assistente da Som na Nuvem. Qual problema você está enfrentando?"
   
   utter_despedida:
-    - text: "Até logo! Se precisar de mais ajuda, estou aqui."
+    - text: "Até logo! Tenha um dia musical ;]."
     - text: "Foi um prazer ajudar! Aproveite sua música."
   
   utter_ajuda_humana:
